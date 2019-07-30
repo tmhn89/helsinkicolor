@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Helsinki color</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="user-input">
+        <h2 class="user-input__title">Helsinki color</h2>
+
+        <div class="user-input__image">
+          <div class="image__dnd">
+            <div class="dnd__text">
+              Drop image here
+              <br>
+              -or-
+              <br>
+              <span class="dnd__button-choose">Choose file</span>
+              <input type="file" class="browse__control" style="position: absolute; left: -9999px;" />
+            </div>
+          </div>
+
+          <img class="image__preview" src="img/example.jpg" />
+        </div>
+
+        <div class="main-color">
+          <h3 class="main-color__text">
+            Dominant color:
+          </h3>
+          <div class="color-box main-color__color-box"></div>
+        </div>
+
+        <div class="palette">
+          <h3 class="palette__text">
+            Palette:
+          </h3>
+          <ul class="palette__list"></ul>
+        </div>
+      </div>
+
+      <div class="result">
+        <!-- <img class="result__img" src="img/template.svg" /> -->
+        <div id="svg"></div>
+        <a class="result__export-button" href="javascript:void(0);">Export</a>
+      </div>
+
+    </div>
+
+    <pre class="debug"></pre>
+
+    <script src="js/lib/color-thief.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/moment.min.js"></script>
+    <script src="js/lib/svg.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/svg.js"></script> -->
+  </body>
+</html>

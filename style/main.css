@@ -1,0 +1,61 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.user-input__image {
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
+}
+
+.image__preview {
+  height: 240px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.image__dnd {
+  width: 360px;
+  height: 240px;
+  background: #666;
+  color: #fff;
+}
+
+.dnd__text {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dnd__button-choose {
+  cursor: pointer;
+}
+
+.dnd__button-choose:hover {
+  text-decoration: underline;
+}
+
+.palette__list {
+  list-style: none;
+  padding: 0;
+}
+
+.palette__list li {
+  display: inline-block;
+}
+
+.color-box {
+  width: 64px;
+  height: 48px;
+  border-radius: 6px;
+  margin: 8px;
+}
+
+.result {
+  text-align: center;
+}
